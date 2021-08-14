@@ -1,5 +1,8 @@
 const express = require('express');
 const cors = require('cors');
+require('./spreadsheet');
+
+
 
 class Server {
     constructor() {
