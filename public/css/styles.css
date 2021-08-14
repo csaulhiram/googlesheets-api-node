@@ -1,0 +1,379 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #9b9595;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.content .title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+.title h2 {
+    color: #F7DF1E;
+    display: inline-block;
+    padding: 5px;
+    border-bottom: 2px solid #F7DF1E;
+}
+
+
+/* Menu desplegable js */
+
+.menu-desplegable {
+    display: none !important;
+    color: #ffff;
+    cursor: pointer;
+}
+
+
+/* Header */
+
+header {
+    background: #1d1616;
+}
+
+header .content {
+    overflow: hidden;
+}
+
+header .content nav {
+    width: 100%;
+    text-align: right;
+    margin: 25px 0;
+}
+
+header .content nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1em;
+    margin: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 9px;
+    border-bottom: 2px solid transparent;
+}
+
+header .content nav a:hover {
+    color: #F7DF1E;
+    border-bottom: 2px solid #F7DF1E;
+    transition: all 300ms;
+}
+
+header .background {
+    background: url('../img/second.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    max-height: 500px;
+}
+
+header .background .content-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 140px 0;
+}
+
+header .background .text {
+    background: rgba(255, 255, 255, 0.219);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 40px 60px;
+    color: #fff;
+    font-size: 25px;
+}
+
+header .background .text .name {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header .background .text .profesion {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+/* Sobre mi */
+
+.main .about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background: #F7DF1E;
+    border-radius: 5px;
+}
+
+.main .about-me .personal-description,
+.main .about-me .image {
+    width: 49%;
+}
+
+.main .about-me .image img {
+    width: 60%;
+    height: auto;
+}
+
+.main .about-me .personal-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.main .about-me .personal-description p {
+    color: rgba(0, 0, 0, .70);
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.main .about-me .personal-description .bold {
+    font-weight: 700;
+    color: #3d73a0;
+}
+
+.main .about-me .personal-description .social-media {
+    font-size: 50px;
+    text-align: center;
+}
+
+.main .about-me .personal-description .social-media a {
+    color: rgba(255, 255, 255, 40%);
+}
+
+.main .about-me .personal-description .social-media .github:hover {
+    color: #333;
+}
+
+.main .about-me .personal-description .social-media .instagram:hover {
+    color: #5851db;
+}
+
+.main .about-me .personal-description .social-media .twitter:hover {
+    color: #1da1f2;
+}
+
+
+/* Works */
+
+.main .my-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .my-work .work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 400px;
+    background: rgba(255, 255, 255, .5);
+    border: 3px solid #f7de1e75;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.main .my-work .work:hover i {
+    color: rgba(255, 255, 255, 100%);
+    transition: all 1s;
+}
+
+.main .my-work .work:hover a {
+    border-bottom: 2px solid #554949;
+    ;
+    color: #554949;
+    transition: all 2s;
+}
+
+.main .my-work .work i {
+    font-size: 120px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 36%);
+}
+
+.main .my-work .work a {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    color: #5549497a;
+    padding: 15px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+}
+
+
+/* footer */
+
+footer {
+    background: rgba(0, 0, 0, 0.651);
+}
+
+footer .content .title {
+    padding-top: 30px;
+}
+
+footer .content .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+footer .content .formulario input[type="text"],
+footer .content .formulario input[type="email"],
+footer .content .formulario textarea {
+    border: 2px solid rgba(247, 223, 30, 0.4);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+footer .content .formulario input[type="text"]:focus,
+footer .content .formulario input[type="email"]:focus,
+footer .content .formulario textarea:focus {
+    border: 2px solid rgba(247, 223, 30, 1);
+}
+
+footer .content .formulario input[type="text"],
+footer .content .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .content .formulario textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+footer .content .formulario .boton {
+    font-size: 20px;
+    margin: auto;
+    /* background: #F7DF1E; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8b500+35,f7bf33+84 */
+    background: #f8b500;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #f8b500 35%, #f7bf33 84%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #f8b500 35%, #f7bf33 84%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #f8b500 35%, #f7bf33 84%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f8b500', endColorstr='#f7bf33', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+footer .content .formulario .boton:hover {
+    background: #f8b600e1;
+}
+
+
+/* Mediaqueries */
+
+@media screen and (max-width:900px) {
+    .main .my-work .work {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width:840px) {
+    header nav {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* display: none; */
+    }
+    header nav a {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
+    .menu-desplegable {
+        display: block !important;
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .main .about-me .personal-description {
+        width: 100%;
+    }
+    .main .about-me .image {
+        display: none;
+    }
+    .main .about-me .personal-description p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:520px) {
+    header .background {
+        height: 300px;
+    }
+    header .background .content-text {
+        margin: 90px 0;
+    }
+    header .background .text {
+        padding: 30px 50px;
+        font-size: 15px;
+    }
+    .main .my-work .work {
+        width: 100%;
+    }
+}
