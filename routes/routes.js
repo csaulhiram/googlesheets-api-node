@@ -1,11 +1,10 @@
+const { googleSheet, view } = require('../controllers/googleSheet');
 const { Router } = require('express');
 const router = Router();
 
+router.get('/', view)
 
-
-router.get('/', (req, res) => {
-    res.render('/index');
-});
+router.post('/', googleSheet);
 
 
 module.exports = router;

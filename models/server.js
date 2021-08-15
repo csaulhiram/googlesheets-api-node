@@ -1,8 +1,7 @@
 const express = require('express');
+const { google } = require('googleapis');
+
 const cors = require('cors');
-require('./spreadsheet');
-
-
 
 class Server {
     constructor() {
@@ -22,6 +21,10 @@ class Server {
         this.app.use(cors());
         // Static Files
         this.app.use(express.static('public'));
+        // View Engine
+        this.app.set('view engine', 'ejs');
+        // To recive information
+        this.app.use(express.urlencoded({extended:true}));
     }
 
     // Routes
